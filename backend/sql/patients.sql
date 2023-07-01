@@ -1,0 +1,2 @@
+INSERT INTO patients (first_name, last_name, age, gender, email, phone_number, address, birthday, blood_type)
+VALUES ('John', 'Doe', 30, 'Male', 'johndoe@example.com', '1234567890', '123 Main St', '1993-05-15', 'A');
