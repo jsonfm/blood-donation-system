@@ -1,6 +1,7 @@
 import psycopg2
 from config import config
 
+
 def tuples_to_dict(results, columns):
     parsed_results = [dict(zip(columns, row)) for row in results]
     return parsed_results
@@ -29,6 +30,10 @@ class Database:
     def insert(self, query: str):
         cursor = self.connection.cursor()
         cursor.execute(query)
+        self.connection.commit()
+        results = cursor.fetchall()
+        cursor.close()
+        return results
 
 
 db_params = {
@@ -38,5 +43,6 @@ db_params = {
     'user': config.get("POSTGRES_USER"),
     'password': config.get("POSTGRES_PASSWORD")
 }
+
 
 db = Database(db_params)

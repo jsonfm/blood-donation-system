@@ -10,9 +10,10 @@ router = APIRouter(prefix="/patients")
 
 @router.get('/')
 def get_patients():
-    columns = ["first_name", "last_name", "birthday"]
+    columns = ["id", "first_name", "last_name", "birthday", "email", "gender", "blood_type"]
     sql_columns = ",".join(columns)
-    response = db.execute_query(f"SELECT {sql_columns} FROM patients", columns=columns)
+    sql = f"SELECT {sql_columns} FROM patients"
+    response = db.execute_query(sql, columns=columns)
     return response
 
 
@@ -24,7 +25,7 @@ def create_patient(patient: PatientCreateForm):
     """
     print("--> sql: ", sql)
     try:
-        response = db.execute_query(sql)
+        response = db.insert(sql)
         print("response: ", response)
     except Exception as e:
         print("--> error: ", e)
@@ -38,4 +39,10 @@ def update_patient(patient_id: int):
 
 @router.delete("/{patient_id}")
 def delete_patient(patient_id: int):
+    sql = f"DELETE FROM Patients WHERE id = {patient_id}"
+    try:
+        response = db.execute_query(sql)
+        print("response: ", response)
+    except Exception as e:
+        print("--> error: ", e)
     return f"deleted {patient_id}"

@@ -8,7 +8,7 @@ Simple Backend for manage blood donations.
 pip install -r requirements.txt
 ```
 
-### DB
+### 💾 Database
 
 Set your environment variables following `.env.example` file:
 
@@ -30,4 +30,10 @@ You can access to the database using `psql`:
 
 ```
 psql -U postgres -W -h localhost -p 5252 -d bloodsystem
+```
+
+### ⚡️ Development
+
+```
+uvicorn main:app --reload
 ```
