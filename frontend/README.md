@@ -1,63 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Blood system donation
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+App for manage blood donation.
 
-## Setup
+### 🎨 Design
 
-Make sure to install the dependencies:
+Based on [OneBlood](https://www.behance.net/gallery/170341463/OneBlood-Website-A-blood-bank-website-redesign?tracking_source=search_projects|blood+donation+website) Design.
 
-```bash
-# npm
-npm install
+### ⚡️ Development
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
 ```
 
-## Production
+### 📦 Build
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
+npm run generate
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
