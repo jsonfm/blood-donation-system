@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-const showMenu = ref(false);
+const showMenu = ref(true);
 const toggleShowMenu = () => showMenu.value = !showMenu.value;
 const showMenuClassName = ref("left-full overflow-hidden");
 </script>

@@ -83,4 +83,27 @@
             </div>
         </div>
     </section>
+    <section class="py-20 bg-black text-white min-h-[32rem]">
+        <div class="container">
+            <div class="flex">
+                <div class="md:w-1/3">
+                    <h4>Where Can I Donate?</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quod doloribus aut.
+                    </p>
+                    <Button variant="primary">
+                        View all donor centre location
+                    </Button>
+                </div>
+                <div class="w-2/3 px-4">
+                    <div class="w-full h-auto">
+                         <img
+                            src="~/assets/images/bus.png"
+                            class="scale-x-[-1] w-full h-full"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
