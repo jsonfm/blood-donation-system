@@ -1,3 +1,7 @@
 <template>
-    <footer>footer</footer>
+    <footer class="bg-secondary text-white px-4 py-8">
+        <div>
+            <h4>OneBlood</h4>
+        </div>
+    </footer>
 </template>

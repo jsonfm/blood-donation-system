@@ -1,9 +1,33 @@
 <template>
-    <div class="w-full h-96 flex items-center justify-center">
-        <CardsLinkCard title="Donate"/>
+    <div class="w-full min-h-[400px] md:min-h-[600px] flex flex-col items-center justify-center bg-primary text-white rounded-br-[50px] px-4 py-14">
+        <div class="flex w-full justify-center">
+            <div class="w-full md:w-1/2 md:px-12">
+                <div class="flex flex-col">
+                    <h4 class="text-4xl mb-4">
+                        <span>Donate</span>
+                        <p>and give your best.</p>
+                    </h4>
+                    <p>
+                        Donate Blood and join our mission to end Nigeria's severe blood shortage. With over 350.000 pints needed, your selfess act can make all the difference.
+                    </p>
+                </div>
+                <div class="flex gap-2 items-center w-full mt-8">
+                    <div class="w-1/2">
+                         <NuxtLink to="/login" class="w-40 h-40 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-primary duration-200">
+                            Donate Now
+                        </NuxtLink>
+                    </div>
+                    <div class="w-1/2 text-center">
+                        <div class="flex gap-2 items-center justify-center">
+                            <p>Learn More</p>
+                            <Icon name="nimbus:arrow-right"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 hidden md:flex flex-col">
+                ...
+            </div>
+        </div>
     </div>
 </template>
-
-<script>
-console.log("Hello vue.js")
-</script>
