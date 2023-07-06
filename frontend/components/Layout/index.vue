@@ -1,6 +1,6 @@
 <template>
     <LayoutHeader/>
-    <main class="min-h-screen pt-16">
+    <main class="min-h-screen">
         <slot/>
     </main>
     <LayoutFooter/>

@@ -27,19 +27,26 @@
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 hidden md:flex flex-col">
-                    ...
+                    <div class="h-80 w-full overflow-hidden rounded-md">
+                        <img
+                            src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1883&q=80"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="flex flex-col md:flex-row gap-8 md:gap-12 px-4 py-12 container">
-        <div class="md:w-1/2 flex md:justify-center">
-            <h4 class="text-3xl md:text-4xl">How it works</h4>
+    <section class="flex flex-col md:flex-row gap-8 md:gap-12 py-12 md:py-20 container">
+        <div class="md:w-1/3">
+            <h4 class="text-3xl md:text-4xl xl:text-5xl">How it works</h4>
         </div>
         <div class="md:w-1/2 mt-4 flex flex-col gap-8 md:pr-32">
             <div class="flex gap-4">
                 <div class="w-1/6">
-                    <div class="w-12 h-12 bg-primary rounded-full"></div>
+                    <div class="shadow-md w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <Icon size="20px" name="line-md:text-box-to-text-box-multiple-transition"/>
+                    </div>
                 </div>
                 <div class="w-5/6 flex flex-col gap-2">
                     <h5 class="font-bold text-xl">Register</h5>
@@ -50,7 +57,9 @@
             </div>
             <div class="flex gap-4">
                 <div class="w-1/6">
-                    <div class="w-12 h-12 bg-primary rounded-full"></div>
+                    <div class="shadow-md w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <Icon size="20px" name="line-md:text-box-to-text-box-multiple-transition"/>
+                    </div>
                 </div>
                 <div class="w-5/6 flex flex-col gap-2">
                     <h5 class="font-bold text-xl">Get screened</h5>
@@ -61,7 +70,9 @@
             </div>
             <div class="flex gap-4">
                 <div class="w-1/6">
-                    <div class="w-12 h-12 bg-primary rounded-full"></div>
+                    <div class="shadow-md w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <Icon size="20px" name="line-md:text-box-to-text-box-multiple-transition"/>
+                    </div>
                 </div>
                 <div class="w-5/6 flex flex-col gap-2">
                     <h5 class="font-bold text-xl">Donate</h5>
