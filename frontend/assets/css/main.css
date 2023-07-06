@@ -6,6 +6,10 @@
 }
 
 @layer components {
+    .container {
+        @apply max-w-[1200px] mx-auto px-4;
+    }
+
     .btn {
         @apply px-4 py-2 outline-none drop-shadow-lg duration-200 rounded-md;
     }

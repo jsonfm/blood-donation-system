@@ -1,6 +1,6 @@
 <template>
-    <header class="w-full h-16 px-4 fixed top-0 left-0 shadow-md md:shadow-sm bg-secondary">
-        <nav class="w-full h-full flex justify-between items-center">
+    <header class="w-full h-16 fixed top-0 left-0 shadow-md md:shadow-sm bg-secondary">
+        <nav class="w-full h-full flex justify-between items-center container">
             <NuxtLink to="/">
                 <p class="text-white md:text-xl"><b>One</b>Blood</p>
             </NuxtLink>
